@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <title>Ultra Mario</title>
+    <!-- link p5.js and its addons like p5.dom.js or p5.sound.js -->
+    <script src="lib/p5.min.js" type="text/javascript"></script>
+    <!-- link p5.play.js -->
+    <script src="lib/p5.play.js" type="text/javascript"></script>
+    <!-- link p5.dom.js -->
+    <script src="lib/p5.dom.js" type="text/javascript"></script>
+
+    <!-- link your javascript sketch -->
+    <script src="scripts/sprites.js" type="text/javascript"></script>
+
+    <script src="main.js" type="text/javascript"></script>
+
+    <script src="characters_environment.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    <link rel="shortcut icon" href="icons8-question-100.png" type="image/x-icon">
+  </head>
+  <body>
+    <h1>Ultra Mario</h1>
+    <button data-toggle="modal" data-target="#myModal">Instucciones</button>
+    <br>
+    <div id="myModal" class="modal fade">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Instrucciones</h2>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="jump.png" alt="">
+          <img src="right.png" alt="">
+          <img src="left.png" alt="">
+        </div>
+      </div>
+    </div>
+    <button onclick="startGame()">Comenzar</button>
+    <div id="juego"></div>
+    <div id="consola"></div>
+  </body>
+</html>
